@@ -1,8 +1,8 @@
 package com.joaomgcd.taskerpluginsample
 
 import android.os.Bundle
-import android.support.test.InstrumentationRegistry
-import android.support.test.runner.AndroidJUnit4
+import androidx.test.InstrumentationRegistry
+import androidx.test.runner.AndroidJUnit4
 import com.joaomgcd.taskerpluginlibrary.output.TaskerOutputVariable
 import com.joaomgcd.taskerpluginlibrary.output.TaskerOutputsForConfig
 import com.joaomgcd.taskerpluginlibrary.output.runner.TaskerOutputForRunner
@@ -16,9 +16,9 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 class MusicState(
-        @get:TaskerOutputVariable(R.string.playing_variable, R.string.playing_label, R.string.playing_html_label) val playing: Boolean,
-        @get:TaskerOutputVariable(R.string.artist, R.string.artist_label, R.string.artist_html_label) val artist: String,
-        @get:TaskerOutputVariable(R.string.song, R.string.song_label, R.string.song_html_label) val songName: String
+        @get:TaskerOutputVariable("playing variable", R.string.playing_label, R.string.playing_html_label) val playing: Boolean,
+        @get:TaskerOutputVariable("artist", R.string.artist_label, R.string.artist_html_label) val artist: String,
+        @get:TaskerOutputVariable("song", R.string.song_label, R.string.song_html_label) val songName: String
 )
 
 

@@ -24,8 +24,8 @@ android {
         }
     }
     compileOptions {
-        targetCompatibility 17
-        sourceCompatibility 17
+        targetCompatibility "19"
+        sourceCompatibility "19"
     }
     buildFeatures {
         viewBinding true

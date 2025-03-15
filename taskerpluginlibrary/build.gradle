@@ -8,7 +8,6 @@ android {
     compileSdk 34
 
 
-
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 34
@@ -21,8 +20,8 @@ android {
     }
 
     compileOptions {
-        targetCompatibility 17
-        sourceCompatibility 17
+        targetCompatibility "19"
+        sourceCompatibility "19"
     }
     namespace 'com.joaomgcd.taskerpluginlibrary'
 
