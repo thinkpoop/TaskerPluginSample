@@ -16,9 +16,9 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 class MusicState(
-        @get:TaskerOutputVariable("playing variable", R.string.playing_label, R.string.playing_html_label) val playing: Boolean,
-        @get:TaskerOutputVariable("artist", R.string.artist_label, R.string.artist_html_label) val artist: String,
-        @get:TaskerOutputVariable("song", R.string.song_label, R.string.song_html_label) val songName: String
+    @get:TaskerOutputVariable("playing variable", labelResIdName = "playing_label", htmlLabelResIdName = "playing_html_label") val playing: Boolean,
+    @get:TaskerOutputVariable("artist", labelResIdName = "artist_label", htmlLabelResIdName = "artist_html_label") val artist: String,
+    @get:TaskerOutputVariable("song", labelResIdName = "song_label", htmlLabelResIdName = "song_html_label") val songName: String
 )
 
 
